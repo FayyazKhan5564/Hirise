@@ -1,0 +1,129 @@
+.about-page {
+    padding: 2rem;
+    margin-top: 80px;
+    background-color: var(--background-color);
+  }
+  
+  .about-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding: 4rem 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+  }
+  
+  .about-section.reverse {
+    direction: rtl;
+  }
+  
+  .about-section.reverse .about-content {
+    direction: ltr;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .about-content h3 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  .about-content h3::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+  }
+  
+  .about-text {
+    color: var(--text-color);
+    line-height: 1.8;
+  }
+  
+  .about-text p {
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-text p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .about-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .about-image img:hover {
+    transform: scale(1.02);
+  }
+  
+  @media (max-width: 1024px) {
+    .about-section {
+      gap: 2rem;
+      padding: 3rem 1.5rem;
+    }
+  
+    .about-content h3 {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-section,
+    .about-section.reverse {
+      grid-template-columns: 1fr;
+      direction: ltr;
+      padding: 2rem 1rem;
+    }
+  
+    .about-image {
+      order: -1;
+    }
+  
+    .about-content h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .about-text {
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-page {
+      padding: 1rem;
+    }
+  
+    .about-section {
+      padding: 1.5rem 1rem;
+    }
+  
+    .about-content h3 {
+      font-size: 1.5rem;
+    }
+  }
