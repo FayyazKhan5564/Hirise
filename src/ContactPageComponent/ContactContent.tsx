@@ -133,34 +133,34 @@ import { motion } from "framer-motion";
 import "./Contact.css";
 
 const ContactContent = () => {
-  useEffect(() => {
-    const initMap = () => {
-      const map = new google.maps.Map(
-        document.getElementById("contact-map") as HTMLElement,
-        {
-          center: { lat: 20.0059, lng: 73.7897 }, // Coordinates for Nashik
-          zoom: 14,
-        }
-      );
+  // useEffect(() => {
+  //   const initMap = () => {
+  //     const map = new google.maps.Map(
+  //       document.getElementById("contact-map") as HTMLElement,
+  //       {
+  //         center: { lat: 20.0059, lng: 73.7897 }, // Coordinates for Nashik
+  //         zoom: 14,
+  //       }
+  //     );
 
-      new google.maps.Marker({
-        position: { lat: 20.0059, lng: 73.7897 },
-        map: map,
-        title: "HIRISE STEEL STRUCTURE DETAILING",
-      });
-    };
+  //     new google.maps.Marker({
+  //       position: { lat: 20.0059, lng: 73.7897 },
+  //       map: map,
+  //       title: "HIRISE STEEL STRUCTURE DETAILING",
+  //     });
+  //   };
 
-    const script = document.createElement("script");
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${import.meta.env.VITE_GOOGLE_MAPS_API_KEY}&callback=initMap`;
-    script.async = true;
-    script.defer = true;
-    document.body.appendChild(script);
-    (window as any).initMap = initMap;
+  //   const script = document.createElement("script");
+  //   script.src = `https://maps.googleapis.com/maps/api/js?key=${import.meta.env.VITE_GOOGLE_MAPS_API_KEY}&callback=initMap`;
+  //   script.async = true;
+  //   script.defer = true;
+  //   document.body.appendChild(script);
+  //   (window as any).initMap = initMap;
 
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
+  //   return () => {
+  //     document.body.removeChild(script);
+  //   };
+  // }, []);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -175,9 +175,9 @@ const ContactContent = () => {
     const mailtoLink = `mailto:info@hirise.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(composedMessage)}`;
     window.location.href = mailtoLink;
 
-    const whatsappNumber = "7558245864";
-    const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(composedMessage)}`;
-    window.open(whatsappLink, "_blank");
+    // const whatsappNumber = "7558245864";
+    // const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(composedMessage)}`;
+    // window.open(whatsappLink, "_blank");
   };
 
   const fadeInLeft = {
@@ -302,7 +302,9 @@ const ContactContent = () => {
             viewport={{ once: true, amount: 0.3 }}
             variants={fadeInRight}
           >
-            <div id="contact-map" className="map-container"></div>
+            {/* <div id="contact-map" className="map-container"></div> */}
+            <div id="contact-map"></div>
+
             <motion.div 
               className="contact-info"
               variants={staggerFormItems}

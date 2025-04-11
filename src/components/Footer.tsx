@@ -1,82 +1,3 @@
-// import React from 'react';
-// import { Link } from 'react-router-dom';
-// import {Mail, MapPin, Phone } from 'lucide-react';
-// import { FaWhatsapp, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
-
-// const Footer = () => {
-//   return (
-//     <footer className="footer">
-//       <div className="container">
-//         <div className="footer-content">
-//           <div className="footer-section">
-//             <h3>Quick Links</h3>
-//             <ul className="footer-links">
-//               <li><Link to="/">Home</Link></li>
-//               <li><Link to="/about">About</Link></li>
-//               {/* <li><Link to="/projects">Projects</Link></li> */}
-//               <li><Link to="/services">Services</Link></li>
-//               <li><Link to="/contact">Contact</Link></li>
-//             </ul>
-//           </div>
-
-//           <div className="footer-section">
-//           <h3>Services</h3>
-//           <ul className="footer-links">
-//             <li><Link to="/services/3d-modeling">3D Modeling</Link></li>
-//             <li><Link to="/services/2d-shop-drawings">2D Shop Drawings</Link></li>
-//             <li><Link to="/services/anchor-bolt-drawings">Anchor Bolt Drawings</Link></li>
-//             <li><Link to="/services/material-summary">Material Summary</Link></li>
-//           </ul>
-//         </div>
-
-//           <div className="footer-section">
-//             <h3>Contact Info</h3>
-//             <ul className="footer-links">
-//               <li>
-//                 <Phone size={16} style={{ marginRight: '8px', display: 'inline' }} />
-//                 +91 755 824 5864
-//               </li>
-//               <li>
-//                 <Mail size={16} style={{ marginRight: '8px', display: 'inline' }} />
-//                 info@hirise.com
-//               </li>
-//               <li>
-//                 <MapPin size={16} style={{ marginRight: '8px', display: 'inline' }} />
-//                 1212 Pakhal ROAD, NAshik
-//               </li>
-//             </ul>
-//           </div>
-
-//           <div className="footer-section">
-//             <h3>Follow Us</h3>
-//             <div className="social-links">
-//               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-//                 <FaInstagram size={20} />
-//               </a>
-//               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-//                 <FaFacebook size={20} />
-//               </a>
-//               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-//                 <FaLinkedin size={20} />
-//               </a>
-//               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-//                 <FaWhatsapp size={20} />
-//               </a>
-//             </div>
-//           </div>
-//         </div>
-
-//         <div className="copyright">
-//           <p>&copy; 2025 HIRISE STEEL STRUCTURE DETAILING. All rights reserved.</p>
-//         </div>
-//       </div>
-//     </footer>
-//   );
-// };
-
-// export default Footer;
-
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {Mail, MapPin, Phone } from 'lucide-react';
@@ -168,9 +89,9 @@ const Footer = () => {
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin size={20} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              {/* <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp size={20} />
-              </a>
+              </a> */}
             </div>
           </motion.div>
         </motion.div> 

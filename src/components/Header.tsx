@@ -1,90 +1,3 @@
-// import React, { useState } from 'react';
-// import TraceLogo from '../assets/images/HIRISE_LOGO_01.svg?react';
-// import { Link } from 'react-router-dom';
-// import { Menu, X } from 'lucide-react';
-// import { FaWhatsapp, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
-
-
-// const Header = () => {
-//   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-//   const toggleMenu = () => {
-//     setIsMenuOpen(!isMenuOpen);
-//   };
-
-//   return (
-//     <header className="header">
-//       <div className="container header-content">
-//         <Link to="/" className="logo">
-//           <TraceLogo width={200} height={100} />
-//           <span className="company-name">HIRISE STEEL <br />DETAILED SOLUTIONS</span>
-//         </Link>
-
-//         <button className="mobile-menu-button" onClick={toggleMenu}>
-//           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-//         </button>
-
-//         <nav className={`nav-container ${isMenuOpen ? 'active' : ''}`}>
-//           <ul className="nav-links">
-//             <li><Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link></li>
-//             <li><Link to="/about" onClick={() => setIsMenuOpen(false)}>About</Link></li>
-//             {/* <li><Link to="/projects" onClick={() => setIsMenuOpen(false)}>Projects</Link></li> */}
-//             <li className="nav-item">
-//               <Link to="/services" onClick={() => setIsMenuOpen(false)}>Services</Link>
-//               <div className="dropdown">
-//                 <ul className="dropdown-links">
-//                   <li><Link to="/services/3d-modeling" onClick={() => setIsMenuOpen(false)}>3D Modeling</Link></li>
-//                   <li><Link to="/services/anchor-bolt-drawings" onClick={() => setIsMenuOpen(false)}>Anchor Bolt Drawings</Link></li>
-//                   <li><Link to="/services/advance-bill-of-material" onClick={() => setIsMenuOpen(false)}>Advance Bill of Material</Link></li>
-//                   <li><Link to="/services/2d-erection-drawings" onClick={() => setIsMenuOpen(false)}>2D Erection Drawings</Link></li>
-//                   <li><Link to="/services/2d-shop-drawings" onClick={() => setIsMenuOpen(false)}>2D Shop Drawings</Link></li>
-//                   <li><Link to="/services/fabtrol" onClick={() => setIsMenuOpen(false)}>Fabtrol</Link></li>
-//                   <li><Link to="/services/cnc-files" onClick={() => setIsMenuOpen(false)}>CNC, DXF, DSTV, KISS Files</Link></li>
-//                   <li><Link to="/services/material-summary" onClick={() => setIsMenuOpen(false)}>Material Summary</Link></li>
-//                   <li><Link to="/services/field-bolt-summary" onClick={() => setIsMenuOpen(false)}>Field Bolt Summary</Link></li>
-//                 </ul>
-//               </div>
-//             </li>
-//             <li><Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link></li>
-//           </ul>
-
-//           <div className="social-links-mobile">
-//             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-//               <FaInstagram size={20} />
-//             </a>
-//             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-//               <FaFacebook size={20} />
-//             </a>
-//             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-//               <FaLinkedin size={20} />
-//             </a>
-//             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-//             <FaWhatsapp size={20} />
-//           </a>
-//           </div>
-//         </nav>
-
-//         <div className="social-links-desktop">
-//           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-//             <FaInstagram size={20} />
-//           </a>
-//           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-//             <FaFacebook size={20} />
-//           </a>
-//           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-//             <FaLinkedin size={20} />
-//           </a>
-//           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-//             <FaWhatsapp size={20} />
-//           </a>
-//         </div>
-//       </div>
-//     </header>
-//   );
-// };
-
-// export default Header;
-
 import React, { useState } from 'react';
 import TraceLogo from '../assets/images/HIRISE_LOGO_01.svg?react';
 import { Link } from 'react-router-dom';
@@ -114,7 +27,7 @@ const Header = () => {
         >
           <Link to="/" className="logo">
             <TraceLogo width={200} height={100} />
-            <span className="company-name">HIRISE STEEL <br />DETAILED SOLUTIONS</span>
+            <span className="company-name">HIRISE STEEL <br />DETAILING SOLUTIONS</span>
           </Link>
         </motion.div>
 
@@ -175,9 +88,9 @@ const Header = () => {
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin size={20} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              {/* <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp size={20} />
-              </a>
+              </a> */}
             </motion.div>
           </motion.nav>
         </AnimatePresence>
@@ -197,9 +110,9 @@ const Header = () => {
           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
             <FaLinkedin size={20} />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          {/* <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
             <FaWhatsapp size={20} />
-          </a>
+          </a> */}
         </motion.div>
       </div>
     </motion.header>
